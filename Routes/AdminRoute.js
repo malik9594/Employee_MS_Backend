@@ -175,6 +175,7 @@ router.get('/admin_records',(req, res)=>{
 })
 
 router.get('/logout', (req,res)=>{
+    
     res.clearCookie('token')
     return res.json({Status: true});
 })
